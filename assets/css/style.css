@@ -1,0 +1,191 @@
+/* background pattern */
+body{
+    background-image: url("../images/morocco.png");
+    background-repeat: repeat;
+    height: 100%;
+    color: #777777;
+    line-height: 1.5em;
+}
+
+/* navbar stuff */
+
+.navbar {
+    background: #ffffff;
+    /* border: red solid 1px; */
+    /* #cccccc 10px;*/
+    width: 100%;
+    border-bottom: #cccccc solid 2px;
+}
+
+/* my name */
+.navbar-brand {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin-left: 10%;
+    /* margin: 0; */
+    /* margin-bottom: 20px; */
+    font-size: 28px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+/* the tabs */
+.navbar-collapse {
+    float: right;
+    /* border: blue solid 5px; */
+    margin-right: 10%;
+    /* need to align the tabs to center of navbar */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* removing bullets */
+.navbar-nav {
+    list-style: none;
+}
+/* not having tabs overlap */
+.nav-item {
+    /* padding-left: 20px; */
+    padding: 10px;
+}
+
+/* where content goes on all three pages */
+article {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    /* float: center; */
+    width: 960px;
+    /* width: 70%; */
+    align-content: center;
+    border: solid #dddddd 3px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #777777;
+}
+
+/* titles on all */
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #4aaaa5;
+    /* border: solid red 3px; */
+    padding: 10px;
+    padding-right: 30px;
+    
+}
+
+/* img on about me */
+.headshot {
+    float: left;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.p1::first-letter { 
+    font-size: 300%;
+    font-family: 'Ruthie', cursive;
+  }
+
+/* portfolio */
+
+.table {
+    padding: 0;
+    margin: 0;
+    border: 0px;
+}
+
+/* where is the border coming from? */
+
+.gallery {
+    float: left;
+    margin: 40px;
+    position: relative; 
+}
+
+.gallerytxt { 
+    position: absolute;
+    bottom: 30px;
+    width: 200px;
+    padding: 10px;
+    background: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* contact */
+.mb-2 {
+    background-color: #4aaaa5;
+    border-color: #4aaaa5;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    /* border: solid red 3px; */
+    background: #666666;
+    color: #8d8d8d;
+    border-top:  8px solid #4aaaa5;
+    text-align: center;
+    /* height: 15%; */
+    padding-top: 30px;
+}
+
+/* hover effects */
+.gallery:hover {
+    box-shadow: 10px 10px 10px #777777;
+}
+
+.mb-2:hover {
+    box-shadow: 5px 5px 5px #777777;
+}
+
+a {
+    color:#777777; 
+}
+
+a:hover {
+    text-shadow: 0 0 3px #4aaaa5;
+    text-decoration: none;
+    color: currentColor;
+}
+
+.navbar-brand:hover {
+    text-shadow: 0 0 3px #4aaaa5;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* media for 980 px */
+@media screen and (max-width: 980px) {
+/* content not centered, ~same size as 768 */
+/* mostly just defaults from the original css */
+}
+
+/* media for 768px */
+@media screen and (max-width: 768px) {
+    /* content with small gutters (10px either side??) */
+    article {
+        width : 760px;
+    }
+
+}
+
+/* media for 640 */
+@media screen and (max-width: 640px) {
+
+    /* make name 100% */
+    .navbar-brand {
+        width: 100%;
+        margin-left: 0px;
+        }
+
+/* content with small gutters */
+    article {
+    width: 620px;
+    }
+/* fixed header (default) */
+}
